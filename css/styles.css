@@ -22,7 +22,7 @@ body {
 
 /* Container principal */
 .container {
-    max-width: 1000px;
+    max-width: 990px;
     margin: 0 auto;
     padding: 10px; /* Diminuir o espaçamento interno */
     flex: 1;

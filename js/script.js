@@ -5,7 +5,8 @@ function calcularTotal() {
         bauruComOvo: 15.00,
         hamburguer: 7.00,
         cheeseburger: 9.00,
-        refrigerante: 7.00
+        refrigerante: 7.00,
+        Batata: 12.00,
     };
 
     let total = 0;
@@ -62,6 +63,15 @@ function calcularTotal() {
         if (quantidade > 0) {
             total += quantidade * precos.refrigerante;
             resumo += `Refrigerante: ${quantidade} x R$${precos.refrigerante} = R$${(quantidade * precos.refrigerante).toFixed(2)}\n`;
+        }
+    }
+
+     // Batata
+     if (document.getElementById("BatataQtde").value) {
+        let quantidade = parseInt(document.getElementById("BatataQtde").value) || 0;
+        if (quantidade > 0) {
+            total += quantidade * precos.Batata;
+            resumo += `Batata: ${quantidade} x R$${precos.Batata} = R$${(quantidade * precos.Batata).toFixed(2)}\n`;
         }
     }
 
