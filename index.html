@@ -1,92 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <title>Cardápio da Lanchonete</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" heref="style.css"> 
+    <title>Victormenezes</title>
 </head>
+
 <body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/vh.png" alt="logo da pagina ">
 
-  <!-- ÁREA DOS ÍCONES DAS REDES SOCIAIS -->
-  <div class="gradient-background">
-    <div class="container">
-      <div class="outer-container">
-        
-        <!-- ÁREA DOS ÍCONES DAS REDES SOCIAIS -->
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/victor-menezes-439251252/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/VTmenezes99" target="_blank"><i class="fas fa-globe"></i></a>
-          <a href="https://github.com/VTmenezes99" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/victormnz11" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:vmilenhoo@gmail.com"><i class="far fa-envelope"></i></a>
-          <a href="https://wa.me/5521998657977" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
-        </div>
+                </a>
+            </div><!--logo-->
 
-        <!-- Cardápio da Lanchonete -->
-    
-        <div class="menu-container">
-            <h1>Cardápio da Lanchonete</h1>
-            <div class="menu-item">
-                <div class="item-info">
-                    <label for="cachorroQuenteQtde">Cachorro Quente (R$7,00):</label>
-                    <input type="number" id="cachorroQuenteQtde" placeholder="Quantidade" />
-                </div>
-                <img src="imagens-20250331T233722Z-001/imagens/cachorro_quente.png" alt="Cachorro Quente">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <label for="bauruSimplesQtde">Bauru Simples (R$10,30):</label>
-                    <input type="number" id="bauruSimplesQtde" placeholder="Quantidade" />
-                </div>
-                <img src="imagens-20250331T233722Z-001/imagens/bauru.png" alt="Bauru Simples">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <label for="bauruComOvoQtde">Bauru c/ Ovo (R$15,00):</label>
-                    <input type="number" id="bauruComOvoQtde" placeholder="Quantidade" />
-                </div>
-                <img src="imagens-20250331T233722Z-001/imagens/bauru_com_ovo.png" alt="Bauru com Ovo">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <label for="hamburguerQtde">Hamburguer (R$7,00):</label>
-                    <input type="number" id="hamburguerQtde" placeholder="Quantidade" />
-                </div>
-                <img src="imagens-20250331T233722Z-001/imagens/hamburguer.png" alt="Hamburguer">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <label for="cheeseburgerQtde">Cheeseburger (R$9,00):</label>
-                    <input type="number" id="cheeseburgerQtde" placeholder="Quantidade" />
-                </div>
-                <img src="imagens-20250331T233722Z-001/imagens/cheeseburguer.png" alt="Cheeseburger">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <label for="refrigeranteQtde">Refrigerante (R$7,00):</label>
-                    <input type="number" id="refrigeranteQtde" placeholder="Quantidade" />
-                </div>
-                <img src="imagens-20250331T233722Z-001/imagens/coca_cola.png" alt="Refrigerante">
-            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">inico</a></li>
+                    <li><a href="#">Especalidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato"></div>
+            <a href="#">
+                <button>Contato</button>
+            </a>
 
-            <!-- Botão para Calcular o Total -->
-            <button onclick="calcularTotal()">Calcular Preço</button>
-        </div>
+        </div><!--interface-->
+    </header>
 
-        <!-- Div para Exibir os Itens Calculados e o Total -->
-        <div class="order-summary">
-            <h2>Resumo do Pedido</h2>
-            <div id="resumoPedido"></div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        Desenvolvido por <a href="https://github.com/VTmenezes99" target="_blank">Victor Menezes</a>, no Curso de Programador FrontEnd do Senai (2025) Todos os direitos reservados
-    </footer>
-
-    <script src="./js/script.js"></script>
 </body>
+
 </html>
